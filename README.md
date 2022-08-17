@@ -1,0 +1,1 @@
+# stupendousware-core
