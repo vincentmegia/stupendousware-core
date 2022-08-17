@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:visibility="visible"
+  tools:visibility="visible">
+
+  <com.stupendouswarecore.MyView
+    style="@style/Widget.Theme.Android.MyView"
+    android:layout_width="700dp"
+    android:layout_height="700dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="40dp"
+    android:visibility="visible"
+    app:exampleDimension="24sp"
+    app:exampleDrawable="@color/catalyst_redbox_background"
+    app:exampleString="Hello, MyView asdjkfsdfhsjdkfk"
+    tools:visibility="visible" />
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="dfgdfgdfgdfgdfgdfg"
+    android:text="Button"
+    android:visibility="visible"
+    tools:text="dfgdfgdgdfgdfgdfgdgf"
+    tools:visibility="visible" />
+
+</FrameLayout>
