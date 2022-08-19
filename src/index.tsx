@@ -1,3 +1,3 @@
-import Splash from './Screens/Splash'
+import Splash from './screens/Splash'
 
 export { Splash }
