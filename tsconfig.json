@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "stupendousware-core": ["./src/index"]
+      "stupendousware-core": ["./index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
