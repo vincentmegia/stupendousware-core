@@ -2,13 +2,13 @@
    "name": "stupendousware-core",
    "version": "0.1.2",
    "description": "test",
-   "main": "index.tsx",
+   "main": "index",
    "module": "lib/module/index",
    "types": "lib/typescript/index.d.ts",
    "react-native": "index",
    "source": "index",
    "files": [
-      "index.tsx",
+      "index",
       "src",
       "lib",
       "android",
@@ -75,7 +75,8 @@
    },
    "peerDependencies": {
       "react": "*",
-      "react-native": "*"
+      "react-native": "*",
+      "@react-navigation/native": "*"
    },
    "jest": {
       "preset": "react-native",
