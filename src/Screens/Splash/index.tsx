@@ -31,7 +31,7 @@ const Splash = ({ onInit, onComplete }: SplashProps) => {
             <Image source={images.logo} style={styles.logo} />
          </View>
          <View style={styles.textContainer}>
-            <Text style={styles.text}>Copyright Stupendousware 2022.dddd</Text>
+            <Text style={styles.text}>Copyright Stupendousware 2022</Text>
          </View>
       </View>
    )
