@@ -10,20 +10,15 @@ interface SplashProps {
 }
 
 const Splash = ({ onInit, onComplete }: SplashProps) => {
-   const navigation = useNavigation<any>()
-
    useEffect(() => {
-      if (!onInit) return
-      onInit()
+      onInit?.()
    }, [onInit])
 
    useEffect(() => {
-      if (!onComplete) return
       setTimeout(() => {
-         onComplete()
-         navigation.push('Home')
-      }, 5000)
-   }, [navigation, onComplete])
+         onComplete?.()
+      }, 2000)
+   }, [onComplete])
 
    return (
       <View style={styles.container}>
@@ -31,7 +26,7 @@ const Splash = ({ onInit, onComplete }: SplashProps) => {
             <Image source={images.logo} style={styles.logo} />
          </View>
          <View style={styles.textContainer}>
-            <Text style={styles.text}>Copyright Stupendousware 2022</Text>
+            <Text style={styles.text}>Copyright 2022 Stupendousware</Text>
          </View>
       </View>
    )
