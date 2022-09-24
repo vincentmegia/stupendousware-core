@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { useNavigation } from '@react-navigation/native'
 import { Image, Text, View } from 'react-native'
 import images from '../../assets'
 import styles from './styles'
