@@ -16,8 +16,10 @@ jobs:
          - uses: actions/setup-node@v3
            with:
               node-version: 18.7.0
-         - run: npm ci --legacy-peer-deps
-         - run: npm test
+         - run: yarn install --frozen-lockfile
+         - run: yarn test
+         - run: yarn compile
+         - run: yarn lint
 
    publish-gpr:
       needs: build
@@ -31,7 +33,7 @@ jobs:
            with:
               node-version: 18.7.0
               registry-url: https://npm.pkg.github.com/
-         - run: npm ci --legacy-peer-deps
-         - run: npm publish
+         - run: yarn install --frozen-lockfile
+         - run: yarn publish
            env:
               NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
