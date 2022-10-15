@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Splash screen test matches the snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginVertical": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Image
+      source=""
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 120,
+          "width": 120,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-end",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      Copyright 2022 Stupendousware
+    </Text>
+  </View>
+</View>
+`;
